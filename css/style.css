@@ -57,3 +57,12 @@ bg.jpeg{
        
     }
 }
+.line3 {
+    display: inline-block;
+    font-family: "manicotti", sans-serif;
+    font-size: 50px;
+    color: #b700ab;
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 5%;
+}
