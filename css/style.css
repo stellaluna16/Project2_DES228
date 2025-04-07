@@ -1,20 +1,155 @@
+
+
 body {
-    background-image: url('../img/bg.jpeg');
+    background-color: #D9C6B0;
 }
+
 bg.jpeg{
     height: 20%;
     width: 20%;
 }
+
 .line1 {
     display: inline-block;
     font-family: "allotropic", sans-serif;
     font-size: 60px;
-    color: #e2ed79;
+    color:#BF4B21;
     transition: Transform 0.5s;
     text-decoration: none;
     margin-left: 15%;
     animation: transformanimation 2s alternate infinite;
 }
+
+.line2 {
+    display: inline-block;
+    font-family: "allotropic", sans-serif;
+    font-size: 40px;
+    color: #590F15;
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 5%;
+}
+
+.same {
+    display: inline-block;
+    font-family: "manicotti", sans-serif;
+    font-size: 60px;
+    color: #A62121;
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-top: 3%;
+    animation: scaleanimation 2s alternate infinite;
+}
+
+
+.line3 {
+    display: inline-block;
+    font-family: "manicotti", sans-serif;
+    font-size: 50px;
+    color: #D9AE30;
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+
+.line3:hover {
+    transform: scale(1.3) translate(0,15px);
+    color:#590F15;
+}
+
+.line4 {
+    display: inline-block;
+    font-family: "allotropic", sans-serif;
+    font-size: 60px;
+    color: #BF4B21;
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 3%;
+    margin-top: 3%;
+    animation-name: opacityanimation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.line5 {
+    display: inline-block;
+    font-family: "allotropic", sans-serif;
+    font-size: 40px;
+    color: #590F15;
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.line6 {
+    display: inline-block;
+    font-family: "allotropic", sans-serif;
+    font-size: 60px;
+    color:#D9AE30; 
+    transition: Transform 0.5s;
+    text-decoration: none;
+    margin-left: 15%;
+    margin-top: 3%;
+    animation-name:opacityanimation2;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.shake {
+    display: inline-block;
+    font-family: "manicotti", sans-serif;
+    font-size: 80px;
+    color: #A62121;
+    text-decoration: none;
+    margin-left: 1%;
+    margin-top: 3%;
+    animation-name: shakeanimation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shakeanimation { 
+    0% {
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(-5px,0);
+    }
+    50% {
+        transform: translate(5px,0);
+    }
+    75% {
+        transform: translate(-5px,0);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+   
+}
+
+@keyframes opacityanimation {
+    from{
+    color: #BF4B21;
+    }
+    to{
+    color: #A62121;
+    }
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
 @keyframes transformanimation {
     0% {
         transform-origin: center;
@@ -26,43 +161,35 @@ bg.jpeg{
     }
 }
 
-.line2 {
-    display: inline-block;
-    font-family: "allotropic", sans-serif;
-    font-size: 40px;
-    color: #79ed8e;
-    transition: Transform 0.5s;
-    text-decoration: none;
-    margin-left: 5%;
-}
-.same {
-    display: inline-block;
-    font-family: "manicotti", sans-serif;
-    font-size: 60px;
-    color: #91d3ff;
-    transition: Transform 0.5s;
-    text-decoration: none;
-    margin-left: 5%;
-    animation: scaleanimation 2s alternate infinite;
-    
-   
-}
-@keyframes scaleanimation {
-    0% {
-        transform: scale(1) skew(0deg,0deg);
-        
+    @keyframes scaleanimation {
+        0% {
+            transform: scale(1) skew(0deg,0deg);
+            
+        }
+        100% {
+            transform: scale(1.5) skew(10deg,10deg);
+           
+        }
     }
-    100% {
-        transform: scale(1.5) skew(10deg,10deg);
-       
+    @keyframes opacityanimation2 {
+        from{
+        color: #D9AE30;
+        }
+        to{
+        color: #BF4B21;
+        }
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        0% {
+            transform-origin: center;
+            transform: translate(0,0);
+        }
+        100% {
+            transform-origin: center;
+            transform: translate(0,15px);
+        }
     }
-}
-.line3 {
-    display: inline-block;
-    font-family: "manicotti", sans-serif;
-    font-size: 50px;
-    color: #b700ab;
-    transition: Transform 0.5s;
-    text-decoration: none;
-    margin-left: 5%;
-}
